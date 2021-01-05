@@ -117,7 +117,7 @@ export default {
     },
 
     env: {
-        defaultTitle: 'Empire Admin',
-        baseUrl: 'http://api.1pxup.com'
+        defaultTitle: 'Admin Panel',
+        baseUrl: 'http://localhost:3001'
     }
 }
