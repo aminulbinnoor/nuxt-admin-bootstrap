@@ -1,0 +1,44 @@
+// Generic
+$enable-shadows: true;
+$border-radius: 14px;
+$border-radius-sm: 10px;
+
+// Tables
+$table-head-color: darken($text-muted,10%);
+
+// Forms
+$input-box-shadow: none;
+$input-border-radius-lg: 24px;
+$input-border-radius-sm: 24px;
+$input-placeholder-color: #cdcdcd;
+
+$input-group-addon-bg: transparent;
+
+// Cards
+$card-border-radius: $border-radius-sm;
+
+// Dropdowns
+$dropdown-box-shadow: $box-shadow-lg;
+$dropdown-border-radius: $border-radius-sm;
+$dropdown-padding-y: 10px;
+
+// Progress
+$progress-box-shadow: none;
+
+// Buttons
+$btn-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-focus-box-shadow: none;
+$btn-xl-multiplier: 1.1;
+$btn-border-radius: 32px;
+$btn-border-radius-lg: $btn-border-radius;
+
+// Toasts
+$snotify-confirm-border-color: $blue;
+$snotify-border-width: 0;
+$snotify-simple-border-color: $blue;
+$snotify-success-border-color: $green;
+$snotify-info-border-color: $yellow;
+$snotify-warning-border-color: transparent;
+$snotify-error-border-color: transparent;
+$snotify-async-border-color: transparent;

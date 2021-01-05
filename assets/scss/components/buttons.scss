@@ -1,0 +1,48 @@
+.btn {
+    text-transform: uppercase;
+    letter-spacing:1px;
+    font-size:0.85em;
+
+    &.btn-default {
+        color: #5e5e5e;
+    }
+    &.btn-white {
+        background:#ffffff;
+        box-shadow: $box-shadow-lg;
+    }
+    &.btn-circle {
+        border-radius:100%;
+        width:32px;
+        height:32px;
+        text-align:center;
+        line-height:32px;
+        font-size:12px;
+        padding:0;
+        color:$text-muted;
+        box-shadow: $box-shadow-lg;
+
+        &.btn-lg {
+            width:45px;
+            height:45px;
+            font-size:18px;
+            line-height:45px;
+        }
+    }
+
+    &.btn-xl {
+        @include button-size(
+            $btn-padding-y-lg*$btn-xl-multiplier,
+            $btn-padding-x-lg*$btn-xl-multiplier,
+            $btn-font-size,
+            $btn-line-height-lg*$btn-xl-multiplier,
+            $btn-border-radius-lg*$btn-xl-multiplier
+        );
+        border-radius:$btn-border-radius*$btn-xl-multiplier;
+    }
+}
+
+.btn.no-caret {
+    &:after {
+        display:none;
+    }
+}

@@ -1,0 +1,116 @@
+@import '@/node_modules/@fullcalendar/core/main.css';
+@import '@/node_modules/@fullcalendar/daygrid/main.css';
+@import '@/node_modules/@fullcalendar/timegrid/main.css';
+@import '@/node_modules/@fullcalendar/bootstrap/main.css';
+.fc-unthemed {
+    th,
+    td,
+    thead,
+    tbody,
+    .fc-divider,
+    .fc-row,
+    .fc-content,
+    .fc-popover,
+    .fc-list-view,
+    .fc-list-heading td {
+        border-color: #e8e8e8;
+    }
+
+    .fc-header-toolbar {
+        padding: 0 1.5rem;
+    }
+
+    td {
+        &.fc-highlight {
+            background-color: theme-color("dark");
+            opacity:.2;
+            color:#fff;
+        }
+        &.fc-today {
+            background-color: rgba(theme-color("primary"),.2);
+        }
+    }
+
+    .fc-body {
+        > tr > .fc-widget-content {
+            border: 0;
+        }
+    }
+    .fc-divider {
+        display:none;
+    }
+
+    .fc-content-skeleton, .fc-helper-skeleton {
+        .fc-day-top {
+            padding:.5rem;
+
+            .fc-day-number {
+                padding: .3rem .4rem;
+                width:30px;
+                height:30px;
+                line-height:30px;
+                float: none;
+                display: inline-block;
+                background: #e8e8e8;
+                color:darken(#e8e8e8, 30%);
+                border-radius: $border-radius-sm;
+                font-weight:bold;
+                text-align:center;
+            }
+            &.fc-today {
+                .fc-day-number {
+                    background:theme-color(primary);
+                    color:#fff;
+                }
+            }
+        }
+
+        .fc-day-grid-event {
+            margin:2px .5rem;
+            &.fc-not-end {
+                margin-right:0;
+            }
+            &.fc-not-start {
+                margin-left:0;
+            }
+        }
+
+        .fc-event {
+            .fc-title {
+                padding: .4rem .5rem;
+                display:block;
+                color:#fff;
+                overflow:hidden;
+                font-weight:bold;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    .fc-day-grid {
+        table {
+            .fc-day {
+                border-bottom:0;
+                &:first-child {
+                    border-left:0;
+                }
+                &:last-child {
+                    border-right:0;
+                }
+            }
+        }
+    }
+
+    .fc-head {
+        > tr > .fc-widget-header {
+            border-left:0;
+            border-right:0;
+            th:first-child {
+                border-left:0;
+            }
+            th:last-child {
+                border-right:0;
+            }
+        }
+    }
+}
